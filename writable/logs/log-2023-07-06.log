@@ -1,0 +1,32 @@
+CRITICAL - 2023-07-06 17:07:07 --> Class "Codeigniter\Model" not found
+in APPPATH\Models\MahasiswaModel.php on line 7.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\MahasiswaModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\MahasiswaModel')
+ 4 APPPATH\Controllers\Crud.php(10): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\MahasiswaModel')
+ 5 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Crud->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-06 17:08:51 --> Invalid file: "crud/view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('crud/view.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('crud/view', [], true)
+ 3 APPPATH\Controllers\Crud.php(14): view('crud/view')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-06 17:26:36 --> Invalid file: "/template.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/template.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('/template', [], true)
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('crud/view', [], true)
+ 4 APPPATH\Controllers\Crud.php(14): view('crud/view')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
